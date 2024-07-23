@@ -1,0 +1,37 @@
+
+# dependencies
+**/node_modules
+# production
+**/dist
+
+**/**/lib/**
+**/**/es/**
+# misc
+.DS_Store
+npm-debug.log*
+yarn-error.log
+.jest
+jest/**
+/coverage
+.idea
+package-lock.json
+*bak
+
+# visual studio code
+.history
+*.log
+
+functions/mock
+.temp/**
+
+# screenshot
+screenshot
+.firebase
+.eslintcache
+.changelogs
+.changelog.md
+packages/components/src/version.ts
+.dumi/tmp
+.dumi/tmp-production
+server
+*.zip

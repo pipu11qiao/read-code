@@ -1,0 +1,46 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Transform",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "args": [
+        "--",
+        "--dry",
+        "--print",
+        "-t",
+        "src/transforms/transform.js",
+        // "${input:transformFile}",
+        "--parser",
+        // "${input:parser}",
+        "ts",
+        "--run-in-band",
+        "${file}"
+      ],
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "jscodeshift"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    }
+  ],
+  "inputs": [
+    // {
+    //   "type": "pickString",
+    //   "id": "parser",
+    //   "description": "jscodeshift parser",
+    //   "options": ["babel", "babylon", "flow", "ts", "tsx"],
+    //   "default": "ts"
+    // },
+    // {
+    //   "type": "promptString",
+    //   "id": "transformFile",
+    //   "description": "jscodeshift transform file",
+    //   "default": "src/transforms/transform.js"
+    // }
+  ]
+}
